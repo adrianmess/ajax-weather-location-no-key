@@ -14,8 +14,7 @@ function apiReq(url, callbackFunction){
 
 function locations(data){
    var locationInfo = JSON.parse(data)
-   console.log(locationInfo);
-  var location = locationInfo.loc;
+   var location = locationInfo.loc;
       var locationSplit = location.split(",");
     var longitude = locationSplit[0];
     var latitude = locationSplit[1];
@@ -33,9 +32,5 @@ function weather(data){
    document.getElementById("temp").innerHTML = temp+'F';
    document.getElementById("img").src = icon;
 }
-
-
-
-
 
 
